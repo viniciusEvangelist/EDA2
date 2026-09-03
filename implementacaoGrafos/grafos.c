@@ -13,3 +13,8 @@ Grafo* criarGrafo(int n){
     }
     return g; 
 }
+
+void inserirAresta(Grafo *g, int u, int v){
+    g->matriz[u][v] = 1;
+    g->matriz[v][u] = 1;
+}
