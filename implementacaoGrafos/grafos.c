@@ -15,6 +15,11 @@ Grafo* criarGrafo(int n){
 }
 
 void inserirAresta(Grafo *g, int u, int v){
-    g->matriz[u][v] = 1;
-    g->matriz[v][u] = 1;
+    (*g).matriz[u][v] = 1;
+    (*g).matriz[v][u] = 1;
+}
+
+void removerAresta(Grafo *g, int u, int v){
+    (*g).matriz[u][v] = 0;
+    (*g).matriz[v][u] = 0;
 }
