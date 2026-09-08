@@ -23,3 +23,12 @@ void removerAresta(Grafo *g, int u, int v){
     (*g).matriz[u][v] = 0;
     (*g).matriz[v][u] = 0;
 }
+
+void imprimirGrafo(Grafo *g){
+    for(int i = 0; i < g->n; i++){
+        for (int j = 0; j < g->n; j++){
+            printf("%d", g->matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
