@@ -1,0 +1,7 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && mkdir -p output && gcc -Wall -Wextra *.c -o output/main && ./output/main"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true
+}
