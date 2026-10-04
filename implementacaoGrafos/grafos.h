@@ -5,7 +5,7 @@ typedef struct Grafo Grafo;
 Grafo* criarGrafo(int n);
 void inserirAresta(Grafo *g, int u, int v);
 void removerAresta(Grafo *g, int u, int v);
-void imprimirGrafo(Grafo* g);
-void excluirGrafo(Grafo* g);
+void imprimirGrafo(Grafo *g);
+void excluirGrafo(Grafo *g);
 
 #endif

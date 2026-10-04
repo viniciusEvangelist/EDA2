@@ -7,5 +7,6 @@ int main(){
     inserirAresta(g, 0, 2);
     inserirAresta(g, 1, 2);
     imprimirGrafo(g);
+    excluirGrafo(g);
     return 0;
 }

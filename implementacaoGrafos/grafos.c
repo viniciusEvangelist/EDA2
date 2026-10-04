@@ -1,6 +1,8 @@
 #include "grafos.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-typedef struct Grafo {
+struct Grafo {
     int n;
     int **matriz;
 };
@@ -36,4 +38,11 @@ void imprimirGrafo(Grafo *g){
         }
         printf("\n");
     }
+}
+void excluirGrafo(Grafo *g){
+    for(int i = 0; i<g->n; i++){
+        free(g->matriz[i]);
+    }
+    free(g->matriz);
+    free(g);
 }
