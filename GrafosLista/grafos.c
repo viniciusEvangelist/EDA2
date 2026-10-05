@@ -51,3 +51,15 @@ void removerAresta(Grafo *g, int u, int v){
         free(p);
     }
 }
+
+void imprimirGrafo(Grafo *g){
+    for(int i = 0; i < g->n; i++){
+        printf("%d: ", i);
+        No *p = g->lista[i];
+        while(p){
+            printf("%d -> ", p->v);
+            p = p->prox;
+        }
+        printf("NULL\n");
+    }
+}
